@@ -1,19 +1,48 @@
 .carousel {
   width: 100%;
+  height: min-content;
+  background-color: blue;
   display: flex;
-  position: relative;
+  justify-content: center;
 }
 
+.carousel__controllers {
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+  width: 100%;
+}
+.carousel__controllers img {
+  width: 30px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.carousel__controllers img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+}
 .slide {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  width: 100%;
+  transform: translateX(0%);
   text-align: center;
 }
 .slide img {
   width: 200px;
 }
 
-.carousel div:nth-child(1) {
-  background-color: red;
+.carousel .slide:nth-child(1) {
+  
+}
+
+.carousel .slide:nth-child(2) {
+  display: none;
+}
+.carousel .slide:nth-child(3) {
+  display: none;
+}
+
+.hide-to-the-left {
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(-100%);
 }
