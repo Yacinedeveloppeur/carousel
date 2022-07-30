@@ -4,6 +4,7 @@
   background-color: blue;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .carousel__controllers {
@@ -23,6 +24,7 @@
   transition: transform 0.4s ease-in-out;
 }
 .slide {
+  background-color: red;
   width: 100%;
   transform: translateX(0%);
   text-align: center;
@@ -36,13 +38,17 @@
 }
 
 .carousel .slide:nth-child(2) {
-  display: none;
+  margin-right: -100%;
 }
 .carousel .slide:nth-child(3) {
-  display: none;
+  margin-right: -100%;
 }
 
-.hide-to-the-left {
+.go-left {
   transition: transform 0.4s ease-in-out;
   transform: translateX(-100%);
+}
+.go-right {
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(0%);
 }
