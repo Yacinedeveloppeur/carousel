@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Création d'un carousel</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="carousel">
-      <div class="slide">
-        <img src="./images/bulbizzarre.png" alt="bulbizzare" />
-      </div>
-      <div class="slide">
-        <img src="./images/carapuce.png" alt="carapuce" />
-      </div>
-      <div class="slide">
-        <img src="./images/salameche.png" alt="salameche" />
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="style.css">
+  <title>Création d'un caroussel</title>
+</head>
+<body>
+  <div class="carousel">
+    <div class="slides">
+       <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+  <!--  you can add or remove div with class="slide" -->
     </div>
-    <div class="carousel__controllers">
-      <img src="./images/left-arrow.png" alt="left arrow" id="left-controller"/>
-      <img src="./images/right-arrow.png" alt="right arrow" id="right-controller"/>
+    <div class="controllers">
+      <img src="./images/left-arrow.png" alt="left-controller" id="left-controller">
+      <img src="./images/right-arrow.png" alt="right-controller" id="right-controller">
     </div>
-    <script src="index.js"></script>
-  </body>
+  </div>
+  <script src="./index.js"></script>
+</body>
 </html>
+
